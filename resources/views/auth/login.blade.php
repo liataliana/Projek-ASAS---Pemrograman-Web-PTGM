@@ -1,4 +1,4 @@
-```html
+
 <x-guest-layout>
 
 <style>
@@ -126,4 +126,3 @@
 </form>
 
 </x-guest-layout>
-```
