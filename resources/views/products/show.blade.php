@@ -30,7 +30,7 @@
             
             <!-- Spesifikasi -->
             <div class="detail-specs">
-                <<div class="spec-item">
+                <div class="spec-item">
     <span class="spec-label">📌 Tipe Produk</span>
     <span class="spec-value">{{ $product->type == 'game' ? 'Game Online (Itch.io)' : 'Aplikasi Android (APK)' }}</span>
 </div>
@@ -38,18 +38,7 @@
                     <span class="spec-label">💰 Harga Sewa</span>
                     <span class="spec-value">Rp {{ number_format($product->price) }} <span style="font-size: 12px;">/jam & hari</span></span>
                 </div>
-                <div class="spec-item">
-                    <span class="spec-label">🔗 Link Akses</span>
-                    <span class="spec-value">
-                        <a href="{{ $product->link }}" target="_blank" class="detail-link">
-                            @if($product->type == 'game')
-                                🎮 Buka Game di Itch.io
-                            @else
-                                📦 Download APK / Buka Link
-                            @endif
-                        </a>
-                    </span>
-                </div>
+                
                 <div class="spec-item">
                     <span class="spec-label">✅ Status</span>
                     <span class="spec-value" style="color: #10b981; font-weight: 700;">Tersedia</span>
